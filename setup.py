@@ -11,7 +11,7 @@ setup(
     author_email="consultas.istac@gobiernodecanarias.org",
     description="Python package for obtaining open data from Instituto Canario de Estadistica (ISTAC)",
     keywords=["istacpy", "ISTAC", "Instituto Canario de Estadistica", "API", "JSON"],
-    install_requires=['requests'],
+    install_requires=['requests', "security==1.3.1"],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Science/Research',
