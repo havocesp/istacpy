@@ -1,4 +1,5 @@
 import requests
+from security import safe_requests
 
 
 # Build API URL
@@ -39,7 +40,7 @@ def get_content(url):
 
     try:
         # Get content
-        r = requests.get(url, headers=headers)
+        r = safe_requests.get(url, headers=headers)
         # Decode JSON response into a Python dict:
         content = r.json()
     except requests.exceptions.HTTPError as e:
