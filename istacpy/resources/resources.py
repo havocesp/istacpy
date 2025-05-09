@@ -39,7 +39,7 @@ def get_content(url):
 
     try:
         # Get content
-        r = requests.get(url, headers=headers)
+        r = requests.get(url, headers=headers, timeout=60)
         # Decode JSON response into a Python dict:
         content = r.json()
     except requests.exceptions.HTTPError as e:
